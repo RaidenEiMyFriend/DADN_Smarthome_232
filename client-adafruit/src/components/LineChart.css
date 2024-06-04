@@ -1,0 +1,12 @@
+/* ./components/LineChart.module.css */
+.centerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chartContainer {
+    width: 600px;
+    height: 400px;
+  }
+  

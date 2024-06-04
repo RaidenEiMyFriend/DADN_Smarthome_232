@@ -1,0 +1,15 @@
+.chart-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px; /* Adjust this value based on your navbar's height */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
+}
+
+.responsive-chart-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin-bottom: 30px; /* Add space between charts */
+}
+

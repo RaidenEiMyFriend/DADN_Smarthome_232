@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-time Data Dashboard</title>
+</head>
+<body>
+    <h1>Data Updates</h1>
+    <div id="data-display">Waiting for data...</div>
+    <script>
+        const socket = new WebSocket('ws://' + window.location.host + '/ws/data/');
+        socket.onmessage = function(event) {
+            var data = JSON.parse(event.data);
+            document.getElementById('data-display').innerText = data.message;
+        };
+    </script>
+</body>
+</html>
